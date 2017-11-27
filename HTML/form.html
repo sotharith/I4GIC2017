@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Example</title>
+</head>
+<body>
+    <form action="" method="POST" enctype="multipart/form-data">
+        First Name: <input type="text" name="fname" placeholder="First Name"> <br>
+        Color: <input type="color" name="color"> <br>
+        Date: <input type="date" name="date"> <br>
+        Month: <input type="month" name="month">
+        Week: <input type="week" name="week">
+        Time: <input type="time" name="time"> <br>
+        Number: <input type="number" name="number" min="0" max="20">
+        <input type="hidden" name="hidden" value="XXXX"> <br>
+        File: <input type="file" name="file"> <br>
+
+        Gender: <br>
+        <input type="radio" name="gender" value="male"> Male<br>
+        <input type="radio" name="gender" value="female" checked> Female<br>
+        <input type="radio" name="gender" value="other"> Other <br>
+        Marital Status: <br>
+        <input type="radio" name="marital_status" value="married"> Married<br>
+        <input type="radio" name="marital_status" value="single" checked> Single<br>
+        <input type="radio" name="marital_status" value="unknown"> Unknown <br>
+        Mean of Transport: <br>
+        <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+        <input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car<br>
+        Address: <br>
+        <textarea name="address" cols="10" rows="5">
+
+        </textarea>
+        <br>
+
+        Chose your Country: <br>
+        <select name="country">
+            <optgroup label="Asie">
+                <option value="Camb">Cambodia</option>
+                <option value="JP">Japan</option>
+                <option value="China">China</option>
+                <option value="VN">Vietnam</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option value="Fr">France</option>
+                <option value="Germ">Germany</option>
+                <option value="Belg">Belgium</option>
+                <option value="Spain">Spain</option>
+            </optgroup>
+        </select><br>
+        <button type="button">Click Me!</button>
+        <button type="reset">Reset</button>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
