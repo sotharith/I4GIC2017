@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>To-Do Form</title>
+</head>
+<body>
+    <center>
+        <form action="#" method="POST">
+            <table width="60%" bgcolor="#fac090" bordercolor="#f79646">
+                <tr>
+                    <td width="25%"><u><b>FAQ</b></u></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td align="right">Nom et Pr&eacute;nom:</td>
+                    <td colspan="2"><input type="text" name="flname" placeholder="Nom et Pr&eacute;nom"></td>
+                    <td rowspan="2">
+                        <table border="1px" cellspacing="0" rules="none">
+                            <tr>
+                                <td><input type="radio" name="gender" value="F"></td>
+                                <td>Female</td>
+                            </tr>
+                            <tr>
+                                <td><input type="radio" name="gender" value="M"></td>
+                                <td>Male</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Pays:</td>
+                    <td colspan="2">
+                        <select name="country">
+                            <option value="KH">Cambodge</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">Questions</td>
+                    <td colspan="3">
+                        <select name="question">
+                            <option value="1">1. Combien &ccedil;a coute, une maisson &agrave; PP?</option>
+                        </select>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td align="center"><i>Vos Id&eacute;e:</i></td>
+                    <td colspan="3"></td>
+                </tr>
+                <tr>
+                    <td colspan="4">
+                        <textarea name="your_idea" id="" cols="72" rows="10"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><button type="reset">Reset</button></td>
+                    <td><button type="submit">Submit</button></td>
+                    <td></td>
+                </tr>
+            </table>
+        </form>
+    </center>
+</body>
+</html>
