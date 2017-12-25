@@ -1,0 +1,104 @@
+/* a:hover{
+    display: block;
+    border: 1px solid #cccccc;
+    background-color: #cccccc;
+    padding: 10px;
+    border-radius: 4px;
+    width: 90px;
+}
+
+a:active{
+    background-color: blue;
+}
+
+a:visited{
+    color: red;
+} */
+
+/*
+li:first-child{
+    background-color: #cccccc;
+    display: block;
+    list-style: none;
+    padding: 10px;
+
+}*/
+
+/*ul:first-child li{
+    background-color: #cccccc;
+    display: block;
+    list-style: none;
+    padding: 10px;
+}
+*/
+
+/*div>ul>li{
+    background-color: #cccccc;
+    display: block;
+    list-style: none;
+    padding: 10px;
+}*/
+
+/*a+ul>li{
+    background-color: #cccccc;
+    display: block;
+    list-style: none;
+    padding: 10px;
+}*/
+
+/* a~ul{
+    color: yellow;
+} */
+
+.nav-bar>ul{
+    /* width: 120px; */
+}
+
+.nav-bar>ul>li{
+    background-color: #cccccc;
+    display: block;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid black;
+    float: left;
+}
+.nav-bar>ul>li:hover{
+    background-color: #fafafafa;
+    cursor: pointer;
+}
+
+/*[title]{
+    color:red;
+}*/
+
+/*[title='Hello Link']{
+    color:red;
+}*/
+
+/*
+[title~='Link']{
+    color:red;
+}*/
+/*[title*='in']{
+    color:red;
+}*/
+
+/*
+[title^='Hel']{
+    color:red;
+}*/
+/*
+[title$='nk']{
+    color:red;
+}*/
+
+a~ul>li:first-child~li{
+    color: blue;
+}
+a~ul>li:last-child{
+    color:black !important;
+}
+
+tr:last-child, tr:first-child{
+    background-color: yellow;
+}
