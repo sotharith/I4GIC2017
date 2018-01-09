@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dynamic Table</title>
+</head>
+<body>
+    <input name="column" id="tbl_column" placeholder="Table Colums"> 
+    x
+    <input name="row" id="tbl_row" placeholder="Table Rows">
+    <button onclick="createTable();">Create Table</button>
+
+    <div id="tbl_dynamic">
+
+    </div>
+
+    <script>
+        function createTable() {
+            var column=0, row=0;
+            column = document.getElementById('tbl_column').value;
+            row = document.getElementById('tbl_row').value;
+            console.log('colum='+column);
+            console.log('row='+row);
+            var strTable = "<table border='1'>";
+            for(i=0; i<row; i++){
+                strTable += "<tr>";
+                for(j=0; j<column; j++){
+                    strTable += "<td>Hello</td>";
+                }
+                strTable += "</tr>";
+            }
+            strTable += "</table>";
+            console.log(strTable);
+            document.getElementById('tbl_dynamic').innerHTML = strTable;
+        }
+    </script>
+</body>
+</html>
